@@ -40,7 +40,7 @@ public class Utente {
         while(indirizzo.length()==0){
         indirizzo = scanner.nextLine();
         } 
-        FileWriter pw = new FileWriter("C://Users/Utente/Desktop/Desktop/java-project/data/utenti.csv", true);
+        FileWriter pw = new FileWriter("INPUT_PATH*************/java-project/data/utenti.csv", true);
         pw.append("\n");
         pw.append(id+","+nome+","+cognome+","+nascita+","+indirizzo+","+documento);
         pw.flush();
@@ -58,7 +58,7 @@ public class Utente {
         BufferedReader br; 
         boolean new_id = true;
 
-        br = new BufferedReader(new FileReader("C://Users/Utente/Desktop/Desktop/java-project/data/utenti.csv"));
+        br = new BufferedReader(new FileReader("INPUT_PATH*************/java-project/data/utenti.csv"));
 		
         while ((currentLine = br.readLine()) != null) { 
         String[] str = currentLine.split(",");
@@ -84,7 +84,7 @@ public class Utente {
         BufferedReader br; 
         boolean fake_id = true;
                    
-        br = new BufferedReader(new FileReader("C://Users/Utente/Desktop/Desktop/java-project/data/utenti.csv"));
+        br = new BufferedReader(new FileReader("INPUT_PATH*************/java-project/data/utenti.csv"));
       
         while ((currentLine = br.readLine()) != null) { 
         String[] str = currentLine.split(",");
