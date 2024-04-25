@@ -10,7 +10,7 @@ L'utente potrà interagire con l'applicazione inserendo un opportuno input nel t
 - 2 -> Comprare un prodotto
 - 3 -> Visualizzare un ordine
 - 4 -> Aggiungere un cliente nel sistema
-- 5 -> Creare un file con i prodotti disponibili
+- 5 -> Creare un file con i prodotti disponibili<br>
   Nota: Una volta comprato un prodotto, non sarà più disponibile.
 
 ## Come provare l'applicazione:
