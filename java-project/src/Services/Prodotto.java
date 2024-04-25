@@ -18,7 +18,7 @@ public class Prodotto {
     //stampa prodotti
         public  static void readProdotti(){ 
           try{
-			String fileName = "C://Users/Utente/Desktop/Desktop/java-project/data/prodotti.csv";
+			String fileName = "INPUT_PATH*************/java-project/data/prodotti.csv";
 			String currentLine;
             BufferedReader br; 
             br = new BufferedReader(new FileReader(fileName));
@@ -51,7 +51,7 @@ public class Prodotto {
 			String nameNumberString;
 			String checkId;
 			int index;
-            File file = new File("C://Users/Utente/Desktop/Desktop/java-project/data/prodotti.csv");
+            File file = new File("INPUT_PATH*************/java-project/data/prodotti.csv");
 
 			RandomAccessFile raf= new RandomAccessFile(file, "rw");
 			boolean found = false;
@@ -75,7 +75,7 @@ public class Prodotto {
 	// Aggiorna file
 			if (found == true) {
     //Creazione file temporaneo
-			File tmpFile = new File("C://Users/Utente/Desktop/Desktop/java-project/data/temp.csv");
+			File tmpFile = new File("INPUT_PATH*************/java-project/data/temp.csv");
 			RandomAccessFile tmpraf= new RandomAccessFile(tmpFile, "rw");
             raf.seek(0);
             while (raf.getFilePointer()< raf.length()) {
@@ -123,12 +123,12 @@ public class Prodotto {
 		    LocalDate date = LocalDate.now();
 	        String nameNumberString;
     //Inserire path qui!-------------------------------------------------------
-			File file = new File("C://Users/Utente/Desktop/Desktop/java-project/data/prodotti-"+date+".csv");
+			File file = new File("INPUT_PATH*************/java-project/data/prodotti-"+date+".csv");
 			file.createNewFile();
 			if(file.exists()){
 			System.out.println(Utils.GREEN+"File creato"+Utils.RESET);
 			}
-			RandomAccessFile raf= new RandomAccessFile("C://Users/Utente/Desktop/Desktop/java-project/data/prodotti.csv", "rw");
+			RandomAccessFile raf= new RandomAccessFile("INPUT_PATH*************/java-project/data/prodotti.csv", "rw");
 			RandomAccessFile copy_raf= new RandomAccessFile(file, "rw");
     //inizializza nuovo file
 			copy_raf.writeBytes("ID,Data inserimento,Marca,Nome,Prezzo,Disponibile");
@@ -157,7 +157,7 @@ public class Prodotto {
 			String currentLine;
 			BufferedReader br; 
 			boolean exists = false;  
-			br = new BufferedReader(new FileReader("C://Users/Utente/Desktop/Desktop/java-project/data/prodotti.csv"));
+			br = new BufferedReader(new FileReader("INPUT_PATH*************/java-project/data/prodotti.csv"));
 				
 	        while ((currentLine = br.readLine()) != null) { 
 			String[] str = currentLine.split(",");
