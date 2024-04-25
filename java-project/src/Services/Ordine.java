@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Ordine {
     static Scanner scanner = new Scanner(System.in);
-    static String fileName = "C://Users/Utente/Desktop/Desktop/java-project/data/vendite.csv";
+    static String fileName = "INPUT_PATH*************/java-project/data/vendite.csv";
     static int id_order;
     
     //aggiungere ordine a vendite.csv
@@ -65,7 +65,7 @@ public class Ordine {
     String currentLine;
     BufferedReader br; 
     boolean exists = false;
-    br = new BufferedReader(new FileReader("C://Users/Utente/Desktop/Desktop/java-project/data/vendite.csv"));
+    br = new BufferedReader(new FileReader("INPUT_PATH*************/java-project/data/vendite.csv"));
    
     while ((currentLine = br.readLine()) != null) { 
     String[] str = currentLine.split(",");
@@ -87,7 +87,7 @@ public class Ordine {
 public static int AssignOrderId()throws IOException{
 
         BufferedReader br; 
-        br = new BufferedReader(new FileReader("C://Users/Utente/Desktop/Desktop/java-project/data/vendite.csv"));
+        br = new BufferedReader(new FileReader("INPUT_PATH*************/java-project/data/vendite.csv"));
         int max=0;
         while ( br.readLine() != null) { 
           max++;
