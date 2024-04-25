@@ -23,7 +23,8 @@ Nel terminal raggiungi la cartella **java-project/src** e inserisci:
 - javac Main/Application.java
 - Se i file in **Services** non vengono compilati in automatico inserisci -> javac Services/*.java
 - Esegui i file:<br>
-Inserisci: java Main/Application
+Inserisci: java Main/Application<br>
+- Prova l'app.
 
 # English:
 ## Coming soon...
