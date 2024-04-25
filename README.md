@@ -14,5 +14,13 @@ L'utente potrà interagire con l'applicazione inserendo un opportuno input nel t
   Nota: Una volta comprato un prodotto, non sarà più disponibile.
 
 ## Come provare l'applicazione:
+1)
 Clona la repository in locale.
-Nei file nella cartella **src** aggiorna il PATH 
+Nei file nella cartella **src/Services** aggiorna il PATH in cui appare scritto "INPUT_PATH**********" con il proprio PATH.
+2)
+Compila i file:
+Nel terminal raggiungi la cartella **java-project/src** e inserisci:
+- javac Main/Application.java
+- Se i file in **Services** non vengono compilati in automatico inserisci -> javac Services/*.java
+Esegui i file:
+Inserisci: java Main/Application
